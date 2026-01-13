@@ -176,3 +176,32 @@
             el.style.animationPlayState = 'paused';
             animateOnScroll.observe(el);
         });
+
+        // Read More functionality for episode descriptions
+        document.querySelectorAll('.read-more-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const descriptionText = this.parentElement.querySelector('.description-text');
+                const readMoreText = this.querySelector('.read-more-text');
+                
+                if (descriptionText.classList.contains('collapsed')) {
+                    // Expand
+                    descriptionText.classList.remove('collapsed');
+                    readMoreText.textContent = 'Read Less';
+                    this.classList.add('expanded');
+                } else {
+                    // Collapse
+                    descriptionText.classList.add('collapsed');
+                    readMoreText.textContent = 'Read More';
+                    this.classList.remove('expanded');
+                    
+                    // Scroll back to the episode title for better UX
+                    const episodeCard = this.closest('.episode-card');
+                    if (episodeCard) {
+                        episodeCard.scrollIntoView({ 
+                            behavior: 'smooth', 
+                            block: 'start' 
+                        });
+                    }
+                }
+            });
+        });
