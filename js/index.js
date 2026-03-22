@@ -1,4 +1,121 @@
- const playerBar = document.getElementById('playerBar');
+// ─── Episode Data ────────────────────────────────────────────────────────────
+const SPOTIFY_ICON = `<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>`;
+
+const episodes = [
+    {
+        number: '01',
+        title: 'Reflections of the women who carried me',
+        description: `In this opening episode of Reflections, Malikka opens her heart and honors the women God placed around her in seasons when she could not carry herself. These are the women who prayed when words failed, stayed when it would have been easier to walk away, and believed when hope felt fragile.
+
+Through honest conversation, shared laughter, tears, and testimony, this episode reflects on spiritual motherhood, sisterhood, and the power of God-ordained relationships. Each woman carries a piece of Malikka\u2019s story, walking with her through darkness, healing, and transformation, not as saviors, but as vessels God used to remind her who she was when she forgot.
+
+This episode sets the foundation for Reflections with Malikka as more than a podcast. It is a sacred space where stories are honored, healing is witnessed, and God\u2019s faithfulness is magnified through community.
+
+If you have ever been held up by prayer, carried by grace, or strengthened by the love of women who refused to let you fall, this episode is for you.`,
+        duration: '1hr 15 min',
+        date: 'Jan 17, 2026',
+        spotifyUrl: 'https://open.spotify.com/episode/5zZzmGq5LXqmBvs3CMZOCR?si=SyeIj4uoRAWt6B6ACapCxA'
+    },
+    {
+        number: '02',
+        title: 'Unmasking me',
+        description: `There comes a moment in every healing journey where survival isn\u2019t enough anymore, where God invites us out of performance and into presence.
+
+In this episode, Malikka chooses to be vulnerable in front of the world, sharing her raw testimony of the masks she wore to survive, the pain she hid to stay strong, and the sacred unraveling that led her back to herself and to God. This episode sets the tone for Reflections with Malikka as a real, honest, and Spirit-led space, not built on perfection, but on truth.
+
+Through Scripture, reflection, and vulnerable storytelling, Unmasking Me explores what it really means to live unveiled before God, and why healing can\u2019t begin until hiding ends.
+
+This episode is an invitation to slow down, breathe, and ask yourself: What am I still hiding\u2026 and who am I without the mask?`,
+        duration: '23 min',
+        date: 'Jan 31, 2026',
+        spotifyUrl: 'https://open.spotify.com/episode/0aYx8J38S7U2hNPlCa9Yfx?si=y7OM1UmLTZuI84wAoc8Cpg'
+    },
+    {
+        number: '03',
+        title: 'The Blurred Line Between Recovery and Healing',
+        description: `In this deeply personal and powerful episode, I unpacks the sacred in-between, the space where recovery ends and healing begins.
+
+What happens after the behavior stops? What happens when sobriety stabilizes you, but the wounds beneath the surface still whisper? What does it mean to be rescued\u2026 but not yet fully restored?
+
+Through raw storytelling and biblical truth, Malikka explores the difference between recovery as stabilization and healing as transformation. The space between getting clean and becoming whole. I share how grief ignited my addiction, how recovery brought me to the cross, and how healing kept me there long enough for resurrection.
+
+This is a conversation about the unwrapping, about the layers God tends beneath the surface.
+
+If you\u2019ve stopped the behavior but still feel the ache, you are not behind. You are being healed. This episode is for you.`,
+        duration: '23 min',
+        date: 'Jan 31, 2026',
+        spotifyUrl: 'https://open.spotify.com/episode/4ZRcINXrZQBRaiXhpGwtQX?si=qANN2S-8Q6G68WlXFq4mnQ'
+    },
+    {
+        number: '04',
+        title: 'Reflections of an overflowing rug',
+        description: `There are things we bury. There are things we normalize. And then there are things we inherit.
+
+In Episode 4 of Reflections with Malikka, we explore what happens when the rug can no longer contain what\u2019s been swept beneath it.
+
+Joined by Jazmine, this deeply honest conversation examines generational trauma, silent survival patterns, emotional inheritance, and the sacred breaking points that force us to confront what we\u2019ve avoided.
+
+This episode asks the hard questions: What have you been sweeping under your rug? What did you inherit that you\u2019ve been blaming yourself for? Has your breaking point actually been an invitation? What would happen if you stopped sweeping?
+
+Sometimes God allows the overflow, not to expose us, but to free us. This conversation is for anyone ready to stop managing the mess and start healing from the root.
+
+\u2728 Where Healing Meets Transformation.`,
+        duration: '1hr 5min',
+        date: 'Feb 28, 2026',
+        spotifyUrl: 'https://open.spotify.com/episode/0kRdSCSs2mo9SzdyRqujFm?si=JLi9qu2eSm6SNfnMfyYYdA'
+    },
+    {
+        number: '05',
+        title: 'Reflections of a Love-Starved Heart',
+        description: `Beneath the surface of many of our lives lies a quiet hunger, the longing to be known, chosen, and deeply loved.
+
+In this powerful and deeply personal episode of Reflections, Malikka opens up about the journey of discovering what it means to live with a love-starved heart. Through her testimony, she explores how early experiences, emotional wounds, and unhealthy relationship patterns can shape our understanding of love without us even realizing it.
+
+This episode introduces the concept of the orphan spirit, a mindset rooted in fear, striving, and self-protection, and contrasts it with the truth found in Romans 8:15.
+
+This episode invites listeners to reflect on their own hearts and consider where they may be searching for love outside of God, and how the Father\u2019s love can begin restoring those places.
+
+Because healing begins when we realize that the love we\u2019ve been chasing\u2026 has been chasing us all along.`,
+        duration: '24 min',
+        date: 'Feb 28, 2026',
+        spotifyUrl: 'https://open.spotify.com/episode/4AgdsgXetWIOdpiJX475LT?si=85a3d16b98e34afa'
+    }
+];
+
+function renderEpisodes() {
+    const list = document.getElementById('episode-list');
+    if (!list) return;
+    list.innerHTML = episodes.map(ep => `
+        <div class="episode-card animate-fade-up">
+            <div class="episode-number">${ep.number}</div>
+            <div class="episode-info">
+                <h3>${ep.title}</h3>
+                <div class="episode-description">
+                    <p class="description-text collapsed">${ep.description}</p>
+                    <button class="read-more-btn" type="button">
+                        <span class="read-more-text">Read More</span>
+                        <svg class="read-more-icon" width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M7 10l5 5 5-5z"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="episode-meta">
+                    <span>${ep.duration}</span>
+                    <span>${ep.date}</span>
+                </div>
+                <a href="${ep.spotifyUrl}" class="episode-spotify-link" target="_blank" rel="noopener" aria-label="Listen to Episode ${ep.number} on Spotify">
+                    ${SPOTIFY_ICON}
+                    Listen on Spotify
+                </a>
+            </div>
+        </div>
+    `).join('');
+}
+
+renderEpisodes();
+
+// ─── Player ───────────────────────────────────────────────────────────────────
+const playerBar = document.getElementById('playerBar');
         const playerTitle = document.getElementById('playerTitle');
         const playerSubtitle = document.getElementById('playerSubtitle');
         const barAudio = document.getElementById('barAudio');
@@ -205,3 +322,5 @@
                 }
             });
         });
+
+
