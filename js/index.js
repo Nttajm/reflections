@@ -79,7 +79,37 @@ Because healing begins when we realize that the love we\u2019ve been chasing\u20
         duration: '24 min',
         date: 'Feb 28, 2026',
         spotifyUrl: 'https://open.spotify.com/episode/4AgdsgXetWIOdpiJX475LT?si=85a3d16b98e34afa'
-    }
+    },
+    {
+        number: '06',
+        title: 'Reflections of rejections',
+        description: `
+    
+Rejection is something we all experience…
+but rarely do we stop to examine how deeply it has shaped us.
+
+In this vulnerable and Spirit-led episode, Malikka invites you into a space of honest reflection, unpacking the emotional weight of rejection and the subtle ways it can distort identity, influence relationships, and leave us searching for worth in places we were never meant to.
+
+Through personal reflection and spiritual insight, this episode challenges you to confront the labels you’ve carried, the validation you’ve chased, and the wounds you may have buried.
+
+But more than that, it offers truth.
+
+Because sometimes what felt like rejection…
+was actually God’s protection.
+Sometimes what felt like loss…
+was divine redirection.
+
+This episode creates space for you to pause, reflect, and begin releasing what no longer belongs to you, so you can fully step into who God says you are.
+
+This is more than a conversation…
+it’s a moment of surrender.
+A moment to lay down what rejection tried to build…
+and allow God to rebuild you in truth.
+        `,
+        duration: '25 min',
+        date: 'April 12, 2026',
+        spotifyUrl: 'https://open.spotify.com/episode/3cdNJ4nRQ1YEusrhCYPxpG',
+    },
 ];
 
 function renderEpisodes() {
