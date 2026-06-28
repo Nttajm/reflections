@@ -79,6 +79,33 @@ Because healing begins when we realize that the love we\u2019ve been chasing\u20
         duration: '24 min',
         date: 'Feb 28, 2026',
         spotifyUrl: 'https://open.spotify.com/episode/4AgdsgXetWIOdpiJX475LT?si=85a3d16b98e34afa'
+    },
+    {
+        number: '06',
+        title: 'Reflections of a Silenced Soul (Part 1)',
+        description: `Have you ever felt like your voice didn\u2019t matter?
+
+Like the weight of your past, your pain, or your fear kept you silent?
+
+In Part 1 of Reflections of a Silenced Soul, Malikka vulnerably explores the quiet places of the heart where shame, rejection, grief, fear, and unresolved pain can silence our voices long before we ever speak a word.
+
+Through personal reflection, biblical truth, and the gentle leading of the Holy Spirit, she shares how silence isn\u2019t always the absence of words, sometimes it\u2019s the result of wounds we\u2019ve never allowed God to fully heal.
+
+Anchored in Ezekiel, this episode reminds us that God specializes in breathing life into what feels dry, forgotten, and broken. The places we\u2019ve written off as lifeless are often the very places where He begins His greatest work of restoration.
+
+Whether you\u2019ve struggled to speak up, found yourself shrinking back because of past experiences, or wondered if your voice still has purpose, this reflection is an invitation to trust God with the places you\u2019ve kept hidden and discover that your silence does not have to define your future.
+
+This is more than a conversation about finding your voice, it\u2019s about allowing God to breathe life into the places that have been silent for far too long.
+
+Reflection Scripture: Ezekiel 37:1\u201314
+
+Reflection Question: What area of your life has felt silent, dry, or lifeless, and how might God be inviting you to trust Him to breathe new life into it?
+
+\u2728 Stay tuned for Part 2, where Malikka is joined by special guest Nicky for a powerful conversation about breaking silence, embracing healing, and discovering the freedom that comes when we allow God to breathe life into every hidden place.
+
+Thank you for joining Reflections with Malikka, Where Healing Meets Transformation.`,
+        date: 'Jun 2026',
+        spotifyUrl: 'https://open.spotify.com/episode/06tTGWg5AOQL8CPYw7vz5p'
     }
 ];
 
@@ -100,7 +127,7 @@ function renderEpisodes() {
                     </button>
                 </div>
                 <div class="episode-meta">
-                    <span>${ep.duration}</span>
+                    ${ep.duration ? `<span>${ep.duration}</span>` : ''}
                     <span>${ep.date}</span>
                 </div>
                 <a href="${ep.spotifyUrl}" class="episode-spotify-link" target="_blank" rel="noopener" aria-label="Listen to Episode ${ep.number} on Spotify">
