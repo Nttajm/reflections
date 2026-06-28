@@ -106,7 +106,7 @@ Reflection Question: What area of your life has felt silent, dry, or lifeless, a
 Thank you for joining Reflections with Malikka, Where Healing Meets Transformation.`,
         date: 'Jun 2026',
         spotifyUrl: 'https://open.spotify.com/episode/06tTGWg5AOQL8CPYw7vz5p'
-    }
+    },
 ];
 
 function renderEpisodes() {
