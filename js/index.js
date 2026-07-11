@@ -107,6 +107,23 @@ Thank you for joining Reflections with Malikka, Where Healing Meets Transformati
         date: 'Jun 2026',
         spotifyUrl: 'https://open.spotify.com/episode/06tTGWg5AOQL8CPYw7vz5p'
     },
+    {
+        number: '07',
+        title: 'Reflections of a Silent Soul \u2014 Part 2 | Featuring Nicky',
+        description: `The conversation continues.
+
+In Part 2 of Reflections of a Silent Soul, Nicky joins me to share her story in her own voice\u2014a story of silence, survival, healing, and the courage it takes to finally speak.
+
+Together, we reflect on what happens when pain goes unspoken, when survival teaches us to stay silent, and when God begins to uncover the parts of our stories we once believed we had to carry alone. This is a raw, honest, and vulnerable conversation about finding your voice, confronting what has been hidden, and allowing healing to reach the places that silence once occupied.
+
+Because sometimes healing begins when we finally give ourselves permission to say out loud what we have carried quietly for far too long.
+
+This is more than a conversation. It is a reminder that your story matters, your voice matters, and silence does not have to have the final word.
+
+Where Healing Meets Transformation.`,
+        date: 'Jul 2026',
+        spotifyUrl: 'https://open.spotify.com/episode/1nHNZHE0JaV4yrI1WWFp6a'
+    },
 ];
 
 function renderEpisodes() {
