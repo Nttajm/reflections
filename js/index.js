@@ -125,6 +125,41 @@ Where Healing Meets Transformation.`,
         spotifyUrl: 'https://open.spotify.com/episode/1nHNZHE0JaV4yrI1WWFp6a'
     },
     {
+        number: '08',
+        title: 'Reflections From the Table of Shame',
+        description: `A Reflection with Malikka, Karla & Michele
+
+What if the very place you\u2019ve been trying to hide is the place where God wants to begin your healing?
+
+Shame has a way of convincing us that our past defines us\u2014that our mistakes, failures, regrets, and deepest wounds have the final say over who we are. It tells us to stay silent, hide our stories, and believe we\u2019re too broken to be loved or used by God.
+
+But shame doesn\u2019t get the final word.
+
+In this deeply personal and transparent conversation, Malikka is joined by Karla and Michele as they courageously share their individual journeys through shame, healing, and redemption. Together, they reflect on the moments that once left them feeling bound by guilt and condemnation, and how God\u2019s relentless grace transformed those very places into testimonies of hope.
+
+This episode is more than a conversation\u2014it\u2019s an invitation.
+
+An invitation to step away from the table of shame and take your seat at the table of grace, where Jesus reminds us that our identity is not found in our past but in His finished work on the cross.
+
+Whether you\u2019ve struggled with guilt, rejection, condemnation, addiction, abortion, broken relationships, or simply believing you\u2019re \u201cnot enough,\u201d this episode is a reminder that there is no story too messy for God\u2019s redemption.
+
+Because the places we once wanted to hide often become the very places where God\u2019s glory shines the brightest.
+
+\ud83e\ude9e Reflection Prompt
+
+What lie has shame convinced you to believe about yourself, and what truth from God\u2019s Word is He inviting you to embrace instead?
+
+Thank you for joining us around the table.
+
+Until next time, keep reflecting\u2026 because healing begins when we\u2019re willing to look honestly, love deeply, and allow God to transform what we see.
+
+Welcome to Reflections with Malikka.
+
+Where Healing Meets Transformation.`,
+        date: 'Jul 2026',
+        spotifyUrl: 'https://open.spotify.com/episode/3CPDIr7qCGopeRie1ogHJ1'
+    },
+    {
         number: '09',
         title: 'Reflections Beyond the Mirror',
         description: `Healing often begins when we are willing to look honestly at ourselves, but it cannot end there.
