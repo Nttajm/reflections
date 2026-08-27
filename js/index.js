@@ -124,6 +124,20 @@ Where Healing Meets Transformation.`,
         date: 'Jul 2026',
         spotifyUrl: 'https://open.spotify.com/episode/1nHNZHE0JaV4yrI1WWFp6a'
     },
+    {
+        number: '09',
+        title: 'Reflections Beyond the Mirror',
+        description: `Healing often begins when we are willing to look honestly at ourselves, but it cannot end there.
+
+In this deeply personal solo episode, Malikka reflects on what happens after the revelation, after the healing, and after we begin to recognize who God created us to be. Because the mirror may reveal what has changed within us, but our choices, obedience, and movement reveal whether we truly believe it.
+
+\u201cMirrors reveal identity. Movement reveals belief.\u201d
+
+Reflections Beyond the Mirror is an invitation to move beyond simply recognizing your growth and begin living from the healed, transformed, and faith-filled version of yourself. It is time to stop returning to places God has already delivered you from, release the identity shaped by your past, and walk boldly into the life He has been preparing for you.
+
+The reflection may begin in the mirror, but transformation is revealed in how you move.`,
+        date: 'Aug 2026',
+    },
 ];
 
 function renderEpisodes() {
@@ -147,10 +161,10 @@ function renderEpisodes() {
                     ${ep.duration ? `<span>${ep.duration}</span>` : ''}
                     <span>${ep.date}</span>
                 </div>
-                <a href="${ep.spotifyUrl}" class="episode-spotify-link" target="_blank" rel="noopener" aria-label="Listen to Episode ${ep.number} on Spotify">
+                ${ep.spotifyUrl ? `<a href="${ep.spotifyUrl}" class="episode-spotify-link" target="_blank" rel="noopener" aria-label="Listen to Episode ${ep.number} on Spotify">
                     ${SPOTIFY_ICON}
                     Listen on Spotify
-                </a>
+                </a>` : ''}
             </div>
         </div>
     `).join('');
