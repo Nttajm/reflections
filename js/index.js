@@ -173,6 +173,19 @@ Reflections Beyond the Mirror is an invitation to move beyond simply recognizing
 The reflection may begin in the mirror, but transformation is revealed in how you move.`,
         date: 'Aug 2026',
     },
+    {
+        number: '10',
+        title: 'Reflections Between the Cross and the Crown',
+        description: `There is a space between the cross and the crown, a place where surrender is tested, faith is stretched, and God continues His work in us. In this solo episode, I reflect on what it means to walk through the process without losing sight of the promise.
+
+The cross reminds us of the cost of surrender. The crown points to the purpose and identity God is shaping in us. But the space in between can be where we wrestle, wait, grow, and learn to trust God more deeply.
+
+If you\u2019re in a season that feels unfinished, painful, or uncertain, this reflection is for you. You may not see the crown yet, but God is present in the in-between, and He is still completing the work He began in you.
+
+Reflections with Malikka \u2014 Where Healing Meets Transformation.`,
+        date: 'Sep 2026',
+        spotifyUrl: 'https://open.spotify.com/episode/6s91f1XbtcH2Dgvb35GtvY'
+    },
 ];
 
 function renderEpisodes() {
